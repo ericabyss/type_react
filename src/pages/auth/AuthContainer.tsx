@@ -68,11 +68,33 @@ const [form, setForm] = useState(LOGIN_ACTION); //로그인 & 회원가입 State
         }
         break;
       }
+      
       case JOIN_ACTION:{
         try{
+          const {
+            data: { login : token } ,
+          } = await loginMutation({
+              variables:{
+                studentId: userData.studentId,
+                password: userData.password,
+            },
+          });
 
+          if (token){
+            localStorage.setItem("ACCESS_TOKEN", token);
+            await localLoginMutation({
+              variables:{
+                token: token,
+              },
+            });
+            enqueueSnackbar("안녕하세요", { variant:"success" });
+          }else{
+            localStorage.removeItem("ACCESS_TOKEN");
+            enqueueSnackbar("다시 로그인 해주세요", { variant:"error" });
+          }
         }catch{
-
+          localStorage.removeItem("ACCESS_TOKEN");
+          enqueueSnackbar("다시 로그인 해주세요", { variant:"error" });
         }
         break;
       }

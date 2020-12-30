@@ -74,7 +74,7 @@ const LoginForm = (props: IProps) => {
             borderRadius={"5px"}
             color={"#fff"}
             onClick={(e)=>props.onSubmit(e, LOGIN_ACTION)}>
-                Sign In
+                로그인
         </Button>
         <Button 
             padding={"15px"}
@@ -84,7 +84,7 @@ const LoginForm = (props: IProps) => {
             backgroundColor={"#355ff6"}
             color={"#fff"}
             onClick={()=>props.setForm(JOIN_ACTION)}>
-                Sign Up
+                회원가입
         </Button>
 
     </Box>

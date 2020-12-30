@@ -5,7 +5,7 @@ import { JOIN_ACTION,LOGIN_ACTION } from "../../pages/auth/AuthContainer";
 
 const JoinForm = (props: IProps) => {
 
-    return (    
+    return ( // 회원가입
         <Wrapper 
         display={"flex"}
         justifyContent={"center"}
@@ -86,7 +86,7 @@ const JoinForm = (props: IProps) => {
            backgroundColor={"#355ff6"}
            color={"#fff"}
            onClick={(e)=>props.onSubmit(e, JOIN_ACTION)}>
-               Sign In
+               로그인
             </Button>
             <Button 
             padding={"15px"}
@@ -95,7 +95,7 @@ const JoinForm = (props: IProps) => {
             backgroundColor={"#355ff6"}
             color={"#fff"}
             onClick={()=>props.setForm(LOGIN_ACTION)}>
-                Sign Up
+                회원가입
             </Button>
 
         </Box>
