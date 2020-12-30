@@ -24,6 +24,14 @@ export const JOIN = gql`
         password: $password
         firstName: $firstName
         lastName: $lastName
-        )
+        ){
+            id
+        }
+    }
+`;
+
+export const LOCAL_JOIN = gql`
+    mutation logUserIn($token: String!){
+        logUserIn(token:$token) @client
     }
 `;

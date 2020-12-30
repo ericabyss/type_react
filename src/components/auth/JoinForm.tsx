@@ -86,7 +86,7 @@ const JoinForm = (props: IProps) => {
            backgroundColor={"#355ff6"}
            color={"#fff"}
            onClick={(e)=>props.onSubmit(e, JOIN_ACTION)}>
-               로그인
+               회원가입
             </Button>
             <Button 
             padding={"15px"}
@@ -95,7 +95,7 @@ const JoinForm = (props: IProps) => {
             backgroundColor={"#355ff6"}
             color={"#fff"}
             onClick={()=>props.setForm(LOGIN_ACTION)}>
-                회원가입
+                로그인
             </Button>
 
         </Box>
