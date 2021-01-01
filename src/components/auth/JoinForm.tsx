@@ -97,6 +97,16 @@ const JoinForm = (props: IProps) => {
             onClick={()=>props.setForm(LOGIN_ACTION)}>
                 로그인 화면
             </Button>
+            <Button 
+           padding={"15px"}
+           margin={"20px"} 
+           width={"250px"}
+           borderRadius={"3px"}
+           backgroundColor={"#EEAFAF"}
+           color={"#fff"}
+           onClick={(e)=>props.onSubmit(e, JOIN_ACTION)}>
+               초기화
+            </Button>
 
         </Box>
     </Wrapper>
