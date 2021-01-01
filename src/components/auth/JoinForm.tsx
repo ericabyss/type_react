@@ -105,6 +105,11 @@ const JoinForm = (props: IProps) => {
            backgroundColor={"#EEAFAF"}
            color={"#fff"}
            onClick={(e)=>props.onSubmit(e, JOIN_ACTION)}>
+               {//(e)=>props.onSubmit(e, JOIN_ACTION)}
+               //(event) => this.setState({term: event.target.value })
+            }
+
+
                초기화
             </Button>
 
