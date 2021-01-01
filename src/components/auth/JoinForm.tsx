@@ -95,7 +95,7 @@ const JoinForm = (props: IProps) => {
             backgroundColor={"#355ff6"}
             color={"#fff"}
             onClick={()=>props.setForm(LOGIN_ACTION)}>
-                로그인
+                로그인 화면
             </Button>
 
         </Box>
