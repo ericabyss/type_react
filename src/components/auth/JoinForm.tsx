@@ -82,7 +82,7 @@ const JoinForm = (props: IProps) => {
            padding={"15px"}
            margin={"20px"} 
            width={"250px"}
-           borderRadius={"5px"}
+           borderRadius={"1px"}
            backgroundColor={"#355ff6"}
            color={"#fff"}
            onClick={(e)=>props.onSubmit(e, JOIN_ACTION)}>
@@ -91,7 +91,7 @@ const JoinForm = (props: IProps) => {
             <Button 
             padding={"15px"}
             width={"250px"}
-            borderRadius={"5px"}
+            borderRadius={"1px"}
             backgroundColor={"#355ff6"}
             color={"#fff"}
             onClick={()=>props.setForm(LOGIN_ACTION)}>
@@ -101,7 +101,7 @@ const JoinForm = (props: IProps) => {
            padding={"15px"}
            margin={"20px"} 
            width={"250px"}
-           borderRadius={"3px"}
+           borderRadius={"1px"}
            backgroundColor={"#EEAFAF"}
            color={"#fff"}
            onClick={(e)=>props.onSubmit(e, JOIN_ACTION)}>
