@@ -1,7 +1,6 @@
-import React,{ Fragment, MutableRefObject } from "react";
+import React , { Fragment, MutableRefObject } from "react";
 import styled from "styled-components"
-import {img} from "../../ImgData"
-
+import { img } from "../../ImgData"
 
 const Wrapper = styled.div`
     height: 100vh;
