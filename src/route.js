@@ -32,7 +32,6 @@ const Routes = () => {
 
     `;
 
-
     const{
             data:{isLogin},
         } = useQuery(IS_LOGIN);
