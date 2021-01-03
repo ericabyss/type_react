@@ -1,6 +1,7 @@
 import React , { Fragment, MutableRefObject } from "react";
 import styled from "styled-components"
-import { img } from "../../ImgData"
+import { img } from "../../FeedMe"
+import  CardCompnent from "../../components/CardComponent";
 
 const Wrapper = styled.div`
     height: 100vh;
@@ -11,7 +12,7 @@ const Wrapper = styled.div`
 
 const GridBox = styled.div`
 display: grid;
-grid-template-columns: repeat(4,1fr);
+grid-template-columns: repeat(4,1fr); 
 grid-gap: 10px;
 `;
 
@@ -23,12 +24,12 @@ const ImgBox = styled.img`
 const Overlay = styled.div`
     position: absolute;
     z-index: 10;
-    background-color : rgba(0, 0, 0, 0.8);
+    
     width : 100%;
     height: 100%;
 `;
 
-interface IProps{
+interface IProps{ 
     scrollEl : MutableRefObject<any>;
     handleScroll: () => void;
     count: number;
@@ -37,14 +38,14 @@ interface IProps{
 
 const FeedPresenter = (props: IProps) => {
     return(
-     <Fragment>
-         {props.loading ? <Overlay /> : null }
+    /*{ <Fragment>
+         {props.loading ? <Overlay /> : null }//삼항연산자
          <Wrapper 
             id="wrapper"
             ref={props.scrollEl}
          >
             <GridBox>
-            {/*map함수 = >for이랑 같은 반복문 배열의 length만큼 반복해주는함수*/}
+            {/*map함수 = >for이랑 같은 반복문 배열의 length만큼 반복해주는함수*
             {img.map((element,index) => {
                 if(index<props.count){
                 return <ImgBox src={element.src} alt ="" />;
@@ -53,6 +54,14 @@ const FeedPresenter = (props: IProps) => {
             </GridBox>
         </Wrapper>
     </Fragment>
+
+
+}*/
+<CardCompnent>
+        
+</CardCompnent>
+
+
     );
 };
 
