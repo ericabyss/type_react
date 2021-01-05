@@ -38,14 +38,14 @@ interface IProps{
 
 const FeedPresenter = (props: IProps) => {
     return(
-    /*{ <Fragment>
+    { <Fragment>
          {props.loading ? <Overlay /> : null }//삼항연산자
          <Wrapper 
             id="wrapper"
             ref={props.scrollEl}
          >
             <GridBox>
-            {/*map함수 = >for이랑 같은 반복문 배열의 length만큼 반복해주는함수*
+            {/*map함수 = >for이랑 같은 반복문 배열의 length만큼 반복해주는함수*/}
             {img.map((element,index) => {
                 if(index<props.count){
                 return <ImgBox src={element.src} alt ="" />;
@@ -54,14 +54,7 @@ const FeedPresenter = (props: IProps) => {
             </GridBox>
         </Wrapper>
     </Fragment>
-
-
-}*/
-<CardCompnent>
-        
-</CardCompnent>
-
-
+}
     );
 };
 
