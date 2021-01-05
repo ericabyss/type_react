@@ -1,7 +1,7 @@
 import React , { Fragment, MutableRefObject } from "react";
 import styled from "styled-components"
 import { img } from "../../FeedMe"
-import  CardCompnent from "../../components/CardComponent";
+//import  CardCompnent from "../../components/CardComponent";
 
 const Wrapper = styled.div`
     height: 100vh;
@@ -46,8 +46,8 @@ interface IProps{
 
 const FeedPresenter = (props: IProps) => {
     return(
-    { <Fragment>
-         {props.loading ? <Overlay /> : null }//삼항연산자
+     <Fragment>
+         {props.loading ? <Overlay /> : null }
          <Wrapper 
             id="wrapper"
             ref={props.scrollEl}
@@ -62,7 +62,6 @@ const FeedPresenter = (props: IProps) => {
             </GridBox>
         </Wrapper>
     </Fragment>
-}
     );
 };
 
