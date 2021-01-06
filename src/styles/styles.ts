@@ -58,7 +58,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-width: ${(props: IStyle) => (props.width ? props.width : null)};
+  width: ${(props: IStyle) => (props.width ? props.width : null)};
   height: ${(props: IStyle) => (props.height ? props.height : null)};
   margin: ${(props: IStyle) => (props.margin ? props.margin : null)};
   padding: ${(props: IStyle) => (props.padding ? props.padding : null)};
