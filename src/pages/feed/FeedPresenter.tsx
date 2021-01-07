@@ -1,7 +1,7 @@
 import React , { Fragment, MutableRefObject } from "react";
 import styled from "styled-components"
 import { img } from "../../FeedMe"
-import  CardCompnent from "../../components/CardComponent";
+import  CardCompnent1 from "../../components/CardComponent1";
 
 const Header = styled.div`
     display: flex;
@@ -81,18 +81,17 @@ const FeedPresenter = (props: IProps) => {
             ref={props.scrollEl}
          >
             <GridBox>
-            {/*map함수 = >for이랑 같은 반복문 배열의 length만큼 반복해주는함수*/}
+            {/*map함수 = >for이랑 같은 반복문 배열의 length만큼 반복해주는함수
             <Header>
                 <User>
                     <User_name>[User Name]</User_name>
                 </User>
-                
             </Header>
             <More_box>
                 <Btn></Btn>
-            </More_box>
+            </More_box>*/}
 
-            {/*<CardCompnent />*/}
+            <CardCompnent1 />
            {/*} {img.map((element,index) => {
                 if(index<props.count){
                 return <ImgBox src={element.src} alt ="" />;

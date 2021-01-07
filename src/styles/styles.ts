@@ -19,31 +19,24 @@ export const Wrapper = styled.div`
   height: ${(props: IStyle) => (props.height ? props.height : null)};
   margin: ${(props: IStyle) => (props.margin ? props.margin : null)};
   padding: ${(props: IStyle) => (props.padding ? props.padding : null)};
-
   display: ${(props: IStyle) => (props.display ? props.display : null)};
   align-items: ${(props: IStyle) =>  props.alignItems ? props.alignItems : null};
   justify-content: ${(props: IStyle) =>  props.justifyContent ? props.justifyContent : null};
-
   background-color: ${(props: IStyle) =>  props.backgroundColor ? props.backgroundColor : null};
 `;
 
 export const Box = styled.div`
   position: relative;
-
   width: ${(props: IStyle) => (props.width ? props.width : null)};
   height: ${(props: IStyle) => (props.height ? props.height : null)};
   margin: ${(props: IStyle) => (props.margin ? props.margin : null)};
   padding: ${(props: IStyle) => (props.padding ? props.padding : null)};
-
   display: ${(props: IStyle) => (props.display ? props.display : null)};
   flex-direction: ${(props: IStyle) =>  props.flexDirection ? props.flexDirection : null};
   align-items: ${(props: IStyle) =>  props.alignItems ? props.alignItems : null};
   justify-content: ${(props: IStyle) =>  props.justifyContent ? props.justifyContent : null};
-
   background-color: ${(props: IStyle) =>  props.backgroundColor ? props.backgroundColor : null};
-
   border: ${(props: IStyle) => (props.border ? props.border : null)};
-
   border-radius: ${(props: IStyle) =>  props.borderRadius ? props.borderRadius : null};
 `;
 
@@ -65,3 +58,18 @@ export const Button = styled.button`
   background-color: ${(props: IStyle) =>  props.backgroundColor ? props.backgroundColor : null};
   border-radius: ${(props: IStyle) =>  props.borderRadius ? props.borderRadius : null};
   `;
+
+export const Card = styled.div`
+  position: relative;
+  width: ${(props: IStyle) => (props.width ? props.width : null)};
+  height: ${(props: IStyle) => (props.height ? props.height : null)};
+  margin: ${(props: IStyle) => (props.margin ? props.margin : null)};
+  padding: ${(props: IStyle) => (props.padding ? props.padding : null)};
+  display: ${(props: IStyle) => (props.display ? props.display : null)};
+  flex-direction: ${(props: IStyle) =>  props.flexDirection ? props.flexDirection : null};
+  align-items: ${(props: IStyle) =>  props.alignItems ? props.alignItems : null};
+  justify-content: ${(props: IStyle) =>  props.justifyContent ? props.justifyContent : null};
+  background-color: ${(props: IStyle) =>  props.backgroundColor ? props.backgroundColor : null};
+  border: ${(props: IStyle) => (props.border ? props.border : null)};
+  border-radius: ${(props: IStyle) =>  props.borderRadius ? props.borderRadius : null};
+`;
