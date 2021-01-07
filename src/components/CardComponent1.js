@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components"
-import { Card, Body, Left, Text, Box, Button, Input, Wrapper} from "../styles/styles";
+import { Card, Body, Text, Box, Button, Input, Wrapper} from "../styles/styles";
 import { FiHeart, FiSend } from "react-icons/fi";
 import { BsChat, BsBookmark } from "react-icons/bs";
 import _ from 'lodash';
@@ -20,16 +20,16 @@ class CardCompnent extends Component{
             border={""}
             borderRadius={"10px"}
             flexDirection={"column"}>
-            <Left>
-                <img src = {"/img/insta2.jpg"} />
+            
+                <img src = {"/img/insta2.jpg"} /> {/*계정 이미지*/}
                 <Body>
                     <Text>계정이름</Text>
                     <Text note>2021년 01월 08일</Text>
                 </Body>
-            </Left>
+            
         </Box>
 
-        <Box>
+        <Box> {/* 게시글 이미지 */}
             <img src = {"/img/insta2.jpg"} 
                 style={{
                         height:200,
@@ -37,7 +37,7 @@ class CardCompnent extends Component{
                         flex:1}} />
         </Box>
 
-        <Box style={{height:45}}>
+        <Box style={{height:45}}> {/*버튼란*/}
             <Left>
                 <Button transparent>
                     <FiHeart />
