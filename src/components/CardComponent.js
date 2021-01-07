@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { View, Image, Text, StyleSheet } from 'react-native';
 import styled from "styled-components"
-import { Card, CardItem, Thumbnail, Body, Left, Right, Button, Icon } from 'native-base';
  
 export default class CardCompnent extends Component{
     render() {

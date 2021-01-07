@@ -1,7 +1,7 @@
 import React , { Fragment, MutableRefObject } from "react";
 import styled from "styled-components"
 import { img } from "../../FeedMe"
-//import  CardCompnent from "../../components/CardComponent";
+import  CardCompnent1 from "../../components/CardComponent1";
 
 const Wrapper = styled.div`
     height: 100vh;
@@ -29,13 +29,13 @@ const Overlay = styled.div`
     height: 100%;
 `;
 
-/*const Card = styled.div`
+const Card = styled.div`
     position: absolute;
     z-index: 10;
     background-color : rgba(0, 0, 0, 0.8);
     width : 100%;
     height: 100%;
-`;*/
+`;
 
 interface IProps{ 
     scrollEl : MutableRefObject<any>;
@@ -54,11 +54,12 @@ const FeedPresenter = (props: IProps) => {
          >
             <GridBox>
             {/*map함수 = >for이랑 같은 반복문 배열의 length만큼 반복해주는함수*/}
-            {img.map((element,index) => {   
+            {/*{img.map((element,index) => {   
                 if(index<props.count){
                 return <ImgBox src={element.src} alt ="" />;
                 }
-            })}
+            })}*/}
+            <CardCompnent1 />
             </GridBox>
         </Wrapper>
     </Fragment>

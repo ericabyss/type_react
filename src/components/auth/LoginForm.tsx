@@ -12,9 +12,7 @@ const LoginForm = (props: IProps) => {
         alignItems={"center"}
         width={"100%"} 
         height={"100vh"} 
-        backgroundColor={"#ffffff"}
-    >
-
+        backgroundColor={"#ffffff"}>
     <Box 
         display={"flex"} 
         justifyContent={"center"}
@@ -24,8 +22,7 @@ const LoginForm = (props: IProps) => {
         backgroundColor={"#f2f2f2"}
         border={""}
         borderRadius={"10px"}
-        flexDirection={"column"} //column은 세로정렬 row는 가로정렬
-    >
+        flexDirection={"column"}> {/*//column은 세로정렬 row는 가로정렬*/}
     <img
         src={ "/img/insta2.jpg" }
         alt="" 
@@ -37,7 +34,6 @@ const LoginForm = (props: IProps) => {
             borderRadius:"5px"
         }}
     />
-        
         <Input 
             placeholder={"Student ID"} 
             padding={"15px"} 
