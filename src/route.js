@@ -8,7 +8,7 @@ const LoginRoute = () => {
     return(
     <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={Feed} />
+                <Route exact path="/" component={Auth} />
             </Switch>
         </BrowserRouter>);
 };

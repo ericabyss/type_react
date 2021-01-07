@@ -8,13 +8,14 @@ import { BsChat, BsBookmark } from "react-icons/bs"; //아이콘
 class CardCompnent extends Component{
     render(){
         return (
+            
    
     <Card
         width={"600px"}
         height={"860px"}
         align={"center"}
         border={"3px #f2f2f2 solid"}>
-            
+
         <Box //상단 계정부분
             width={"600px"} 
             height={"60px"}
