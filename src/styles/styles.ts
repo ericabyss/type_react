@@ -60,7 +60,7 @@ export const Button = styled.button`
   `;
 
 export const Card = styled.div`
-  position: relative;
+  position: absolute;
   width: ${(props: IStyle) => (props.width ? props.width : null)};
   height: ${(props: IStyle) => (props.height ? props.height : null)};
   margin: ${(props: IStyle) => (props.margin ? props.margin : null)};

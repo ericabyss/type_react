@@ -8,13 +8,14 @@ import _ from 'lodash';
 class CardCompnent extends Component{
     render(){
         return (
+    <article>
     <Card>
-        <Box
+        <Box //상단
             display={"flex"} 
             justifyContent={"center"}
             alignItems={"center"}
-            width={"400px"} 
-            height={"500px"}
+            width={"600px"} 
+            height={"60px"}
             backgroundColor={"#f2f2f2"}
             border={""}
             borderRadius={"10px"}
@@ -70,6 +71,7 @@ class CardCompnent extends Component{
                 이건 아마도 내용이겠지
         </Box>
     </Card>
+    </article>
         );
     }
 }
