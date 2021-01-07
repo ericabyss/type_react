@@ -1,44 +1,54 @@
 import React, { Component } from 'react';
-import styled from "styled-components"
-import { Card, Body, Text, Box, Button, Input, Wrapper} from "../styles/styles";
-import { FiHeart, FiSend } from "react-icons/fi";
-import { BsChat, BsBookmark } from "react-icons/bs";
-import _ from 'lodash';
+//import styled from "styled-components"
+import { Card, Box, Button } from "../styles/styles";
+import { FiHeart, FiSend } from "react-icons/fi"; //아이콘
+import { BsChat, BsBookmark } from "react-icons/bs"; //아이콘
+//import _ from 'lodash';
  
 class CardCompnent extends Component{
     render(){
         return (
-    <article>
-    <Card>
-        <Box //상단
-            display={"flex"} 
-            justifyContent={"center"}
-            alignItems={"center"}
+   
+    <Card
+        width={"600px"}
+        height={"860px"}
+        align={"center"}
+        border={"3px #f2f2f2 solid"}>
+            
+        <Box //상단 계정부분
             width={"600px"} 
             height={"60px"}
-            backgroundColor={"#f2f2f2"}
-            border={""}
             borderRadius={"10px"}
             flexDirection={"column"}>
-            
-                <img src = {"/img/insta2.jpg"} /> {/*계정 이미지*/}
-                <Body>
+                <img src = {"/img/lo.jpg"}
+                    alt=""
+                    style={{
+                    borderRadius:30,
+                    height:42,
+                    width:42,
+                    flex:1}} /> {/*계정 이미지*/}
+                {/*<Body>
                     <Text>계정이름</Text>
                     <Text note>2021년 01월 08일</Text>
-                </Body>
-            
+                </Body>*/}
+                 계정이름 
         </Box>
 
         <Box> {/* 게시글 이미지 */}
-            <img src = {"/img/insta2.jpg"} 
+            <img src = {"/img/insta2.jpg"}
+                alt=""
                 style={{
-                        height:200,
-                        width:null,
+                        height:620,
+                        width:600,
                         flex:1}} />
         </Box>
 
-        <Box style={{height:45}}> {/*버튼란*/}
-            <Left>
+        <Box style={{
+                    height:45,
+                    justifyContent:"start",
+                    alignItems:"stretch"
+                    }}> {/*버튼란*/}
+            
                 <Button transparent>
                     <FiHeart />
                 </Button>
@@ -51,7 +61,7 @@ class CardCompnent extends Component{
                 <Button transparent>
                     <BsBookmark />
                 </Button>
-            </Left>
+            
         </Box>
 
         <Box style={{ height:40 }}>
@@ -71,16 +81,16 @@ class CardCompnent extends Component{
                 이건 아마도 내용이겠지
         </Box>
     </Card>
-    </article>
+    
         );
     }
 }
 export default CardCompnent;
  
-const style = StyleSheet.create({
+/*const style = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
     }
-})
+})*/
