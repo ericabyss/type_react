@@ -36,28 +36,23 @@ class CardCompnent extends Component{
                              height:42,
                              width:42
                             }} />
-                            {/*<Body>
-                                <Text>계정이름</Text>
-                                <Text note>2021년 01월 08일</Text>
-                            </Body>*/} 
                 <Text
                     flexDirection={"row"}
                     padding={"8px"}
                     verticalAlign={"middle"}
-                    >계정이름
+                    > 계정 이름
                 </Text>
             </Box>
 
-            <Box //게시글 이미지
-                box-sizing= {"content-box"}>
-                <img src = {"/img/moon.jpg"}
+            <Box> 
+                <img src = {"/img/moon.jpg"}//게시글 이미지
                     alt=""
                     style={{
                             height:620,
                             width:600,
                             flex:1
                             }}/>
-        </Box>
+            </Box>
 
         <Box style={{ //버튼란
                     align:"left",
@@ -95,8 +90,8 @@ class CardCompnent extends Component{
                 이건 아마도 내용이겠지
            </Text>*/}
 
-                계정이름 
-                #인스타그램 #따라하기 #리액트네이티브
+                계정 이름 
+                #인스타그램 #따라하기 #리액트
                 이건 아마도 내용이겠지
         </Box>
     </Box>
