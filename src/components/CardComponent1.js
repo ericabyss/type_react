@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import styled from "styled-components"
-import { Card, Box, Button } from "../styles/styles";
+import { Card, Box, Button, Wrapper } from "../styles/styles";
 import { FiHeart, FiSend } from "react-icons/fi"; //아이콘
 import { BsChat, BsBookmark } from "react-icons/bs"; //아이콘
 //import _ from 'lodash';
@@ -8,9 +8,21 @@ import { BsChat, BsBookmark } from "react-icons/bs"; //아이콘
 class CardCompnent extends Component{
     render(){
         return (
-            
+    <Wrapper 
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            width={"100%"} 
+            height={"100vh"} 
+            backgroundColor={"#fafafa"}>
    
-    <Card
+    <Box
+        display={"flex"} 
+        justifyContent={"center"}
+        alignItems={"center"}
+        backgroundColor={"#ffffff"}
+        border={""}
+        flexDirection={"column"}
         width={"600px"}
         height={"860px"}
         align={"center"}
@@ -33,6 +45,7 @@ class CardCompnent extends Component{
                     <Text note>2021년 01월 08일</Text>
                 </Body>*/}
                  계정이름 
+        더보기 버튼
         </Box>
 
         <Box> {/* 게시글 이미지 */}
@@ -45,12 +58,13 @@ class CardCompnent extends Component{
         </Box>
 
         <Box style={{
+                    align:"left",
                     height:45,
                     justifyContent:"start",
                     alignItems:"stretch"
                     }}> {/*버튼란*/}
             
-                <Button transparent>
+                <Button>
                     <FiHeart />
                 </Button>
                 <Button transparent>
@@ -81,7 +95,8 @@ class CardCompnent extends Component{
                 #인스타그램 #따라하기 #리액트네이티브
                 이건 아마도 내용이겠지
         </Box>
-    </Card>
+    </Box>
+</Wrapper>
     
         );
     }
