@@ -25,6 +25,7 @@ export const Wrapper = styled.div`
   align-items: ${(props: IStyle) =>  props.alignItems ? props.alignItems : null};
   justify-content: ${(props: IStyle) =>  props.justifyContent ? props.justifyContent : null};
   background-color: ${(props: IStyle) =>  props.backgroundColor ? props.backgroundColor : null};
+  vertical-align: ${(props: IStyle) =>  props.verticalAlign ? props.verticalAlign : null};
 `;
 
 export const Box = styled.div`

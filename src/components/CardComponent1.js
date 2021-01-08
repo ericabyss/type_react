@@ -19,15 +19,17 @@ class CardCompnent extends Component{
             flexDirection={"column"}
             width={"600px"}
             height={"860px"}
-            border={"3px #f2f2f2 solid"}
+            border={"2px #BDBDBD solid"}
+            border-radius={"3px"}
             boxSizing= {"content-box"} //내용물 정렬
             >
             <Box //상단 계정부분
                 width={"600px"} 
                 height={"60px"}
-                borderRadius={"10px"}
+                //borderRadius={"10px"}
                 flexDirection={"column"}
                 padding={"10px"}
+                verticalAlign={"top"}
                 >
                 <img src = {"/img/lo.jpg"} //계정 이미지
                      alt=""
@@ -35,11 +37,11 @@ class CardCompnent extends Component{
                              borderRadius:30,
                              height:42,
                              width:42
-                            }} />
+                            }}
+                      />
                 <Text
-                    flexDirection={"row"}
+                    //flexDirection={"row"}
                     padding={"8px"}
-                    verticalAlign={"middle"}
                     > 계정 이름
                 </Text>
             </Box>
