@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-//import styled from "styled-components"
-import { Card, Box, Button, Wrapper } from "../styles/styles";
+import styled from "styled-components"
+import { Card, Box, Button, Wrapper, Text } from "../styles/styles";
 import { FiHeart, FiSend } from "react-icons/fi"; //아이콘
 import { BsChat, BsBookmark } from "react-icons/bs"; //아이콘
 //import _ from 'lodash';
@@ -9,74 +9,78 @@ class CardCompnent extends Component{
     render(){
         return (
     <Wrapper 
-            display={"flex"}
-            justifyContent={"center"}
+        width={"100%"} 
+        height={"100%"} 
+        backgroundColor={"#fafafa"}
+        >
+        <Box //카드
             alignItems={"center"}
-            width={"100%"} 
-            height={"100vh"} 
-            backgroundColor={"#fafafa"}>
-   
-    <Box
-        display={"flex"} 
-        justifyContent={"center"}
-        alignItems={"center"}
-        backgroundColor={"#ffffff"}
-        border={""}
-        flexDirection={"column"}
-        width={"600px"}
-        height={"860px"}
-        align={"center"}
-        border={"3px #f2f2f2 solid"}>
+            backgroundColor={"#ffffff"}
+            flexDirection={"column"}
+            width={"600px"}
+            height={"860px"}
+            border={"3px #f2f2f2 solid"}
+            boxSizing= {"content-box"} //내용물 정렬
+            >
+            <Box //상단 계정부분
+                width={"600px"} 
+                height={"60px"}
+                borderRadius={"10px"}
+                flexDirection={"column"}
+                padding={"10px"}
+                >
+                <img src = {"/img/lo.jpg"} //계정 이미지
+                     alt=""
+                     style={{
+                             borderRadius:30,
+                             height:42,
+                             width:42
+                            }} />
+                            {/*<Body>
+                                <Text>계정이름</Text>
+                                <Text note>2021년 01월 08일</Text>
+                            </Body>*/} 
+                <Text
+                    flexDirection={"row"}
+                    padding={"8px"}
+                    verticalAlign={"middle"}
+                    >계정이름
+                </Text>
+            </Box>
 
-        <Box //상단 계정부분
-            width={"600px"} 
-            height={"60px"}
-            borderRadius={"10px"}
-            flexDirection={"column"}>
-                <img src = {"/img/lo.jpg"}
+            <Box //게시글 이미지
+                box-sizing= {"content-box"}>
+                <img src = {"/img/moon.jpg"}
                     alt=""
                     style={{
-                    borderRadius:30,
-                    height:42,
-                    width:42,
-                    flex:1}} /> {/*계정 이미지*/}
-                {/*<Body>
-                    <Text>계정이름</Text>
-                    <Text note>2021년 01월 08일</Text>
-                </Body>*/}
-                 계정이름 
-        더보기 버튼
+                            height:620,
+                            width:600,
+                            flex:1
+                            }}/>
         </Box>
 
-        <Box> {/* 게시글 이미지 */}
-            <img src = {"/img/insta2.jpg"}
-                alt=""
-                style={{
-                        height:620,
-                        width:600,
-                        flex:1}} />
-        </Box>
-
-        <Box style={{
+        <Box style={{ //버튼란
                     align:"left",
                     height:45,
                     justifyContent:"start",
                     alignItems:"stretch"
-                    }}> {/*버튼란*/}
+                    }}>
             
                 <Button>
-                    <FiHeart />
+                    <FiHeart size="30" />
                 </Button>
-                <Button transparent>
-                    <BsChat />
+                <Button>
+                    <BsChat size="30"/>
                 </Button>
-                <Button transparent>
-                    <FiSend />
+                <Button>
+                    <FiSend size="30"/>
                 </Button>
-                <Button transparent>
-                    <BsBookmark />
+                
+                <Button>
+                    <BsBookmark size="30" />
                 </Button>
-            
+                
+                
         </Box>
 
         <Box style={{ height:40 }}>

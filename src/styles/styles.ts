@@ -12,6 +12,8 @@ interface IStyle {
   border?: string;
   borderRadius?: string;
   flexDirection?: string; //flex-box안에 내용들을 정렬해주는애
+  boxSizing? : string;
+  verticalAlign?: string;
 }
 
 export const Wrapper = styled.div`
@@ -38,6 +40,8 @@ export const Box = styled.div`
   background-color: ${(props: IStyle) =>  props.backgroundColor ? props.backgroundColor : null};
   border: ${(props: IStyle) => (props.border ? props.border : null)};
   border-radius: ${(props: IStyle) =>  props.borderRadius ? props.borderRadius : null};
+  box-sizing :  ${(props: IStyle) =>  props.boxSizing ? props.boxSizing : null};
+  vertical-align: ${(props: IStyle) =>  props.verticalAlign ? props.verticalAlign : null};
 `;
 
 export const Input = styled.input`
@@ -55,8 +59,10 @@ export const Button = styled.button`
   height: ${(props: IStyle) => (props.height ? props.height : null)};
   margin: ${(props: IStyle) => (props.margin ? props.margin : null)};
   padding: ${(props: IStyle) => (props.padding ? props.padding : null)};
-  background-color: ${(props: IStyle) =>  props.backgroundColor ? props.backgroundColor : null};
+  background-color: none;
   border-radius: ${(props: IStyle) =>  props.borderRadius ? props.borderRadius : null};
+  border: none;
+  align-items: ${(props: IStyle) =>  props.alignItems ? props.alignItems : null};
   `;
 
 export const Card = styled.div`
@@ -72,4 +78,16 @@ export const Card = styled.div`
   background-color: ${(props: IStyle) =>  props.backgroundColor ? props.backgroundColor : null};
   border: ${(props: IStyle) => (props.border ? props.border : null)};
   border-radius: ${(props: IStyle) =>  props.borderRadius ? props.borderRadius : null};
+`;
+
+export const Text = styled.text`
+  width: ${(props: IStyle) => (props.width ? props.width : null)};
+  height: ${(props: IStyle) => (props.height ? props.height : null)};
+  margin: ${(props: IStyle) => (props.margin ? props.margin : null)};
+  padding: ${(props: IStyle) => (props.padding ? props.padding : null)};
+  outline-style: none;
+  border: none;
+  border-radius: ${(props: IStyle) =>  props.borderRadius ? props.borderRadius : null};
+  flex-direction: ${(props: IStyle) =>  props.flexDirection ? props.flexDirection : null};
+  vertical-align: ${(props: IStyle) =>  props.verticalAlign ? props.verticalAlign : null};
 `;
