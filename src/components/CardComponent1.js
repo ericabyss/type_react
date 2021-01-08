@@ -18,7 +18,7 @@ class CardCompnent extends Component{
             backgroundColor={"#ffffff"}
             flexDirection={"column"}
             width={"600px"}
-            height={"860px"}
+            height={"900px"}
             border={"2px #BDBDBD solid"}
             border-radius={"3px"}
             boxSizing= {"content-box"} //내용물 정렬
@@ -26,10 +26,10 @@ class CardCompnent extends Component{
             <Box //상단 계정부분
                 width={"600px"} 
                 height={"60px"}
-                //borderRadius={"10px"}
-                flexDirection={"column"}
+                //flexDirection={"column"}
                 padding={"10px"}
-                verticalAlign={"top"}
+                verticalAlign={"middle"}
+                flexDirection={"row"}
                 >
                 <img src = {"/img/lo.jpg"} //계정 이미지
                      alt=""
@@ -40,7 +40,6 @@ class CardCompnent extends Component{
                             }}
                       />
                 <Text
-                    //flexDirection={"row"}
                     padding={"8px"}
                     > 계정 이름
                 </Text>
@@ -85,7 +84,7 @@ class CardCompnent extends Component{
             좋아요 101개
         </Box>
 
-        <Box>
+        <Box style={{ height:100 }}>
             {/*<Text>
                 <Text style={{fontWeight:'900'}}> 계정이름 </Text>
                 #인스타그램 #따라하기 #리액트네이티브
@@ -95,6 +94,13 @@ class CardCompnent extends Component{
                 계정 이름 
                 #인스타그램 #따라하기 #리액트
                 이건 아마도 내용이겠지
+
+
+
+        </Box>
+        <Box style={{ height:30 }} >
+
+            댓글란
         </Box>
     </Box>
 </Wrapper>
