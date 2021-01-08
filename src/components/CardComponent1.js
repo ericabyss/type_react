@@ -24,10 +24,10 @@ class CardCompnent extends Component{
             boxSizing= {"content-box"} //내용물 정렬
             >
             <Box //상단 계정부분
+                display={"flex"}
                 width={"600px"} 
                 height={"60px"}
-                //flexDirection={"column"}
-                padding={"10px"}
+                padding={"16px 40px 16px 16px"}
                 verticalAlign={"middle"}
                 flexDirection={"row"}
                 >
@@ -100,6 +100,7 @@ class CardCompnent extends Component{
         </Box>
         <Box style={{ height:30 }} >
 
+           
             댓글란
         </Box>
     </Box>
