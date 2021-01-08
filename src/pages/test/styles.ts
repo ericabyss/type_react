@@ -1,6 +1,7 @@
 import { Container, createStyles, makeStyles, Paper, Theme } from "@material-ui/core";
 import styled from "styled-components";
 
+//TEST STYLE
 //styled-component는 클래스명
 //".box"  안좋음. 그래서 변수명으로 씀.  Mui머테리얼 유아이 : ()
 
@@ -12,7 +13,6 @@ export const useStyles = makeStyles((theme : Theme) =>
         flexDirection:"column",
         width: 300,
         height: 400,
-
     },
     header:{
         display:"flex",
