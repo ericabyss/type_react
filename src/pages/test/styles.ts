@@ -1,4 +1,4 @@
-import { Container, createStyles, makeStyles, Paper, Theme } from "@material-ui/core";
+import { Container, createStyles, makeStyles, Paper, Theme } from "@material-ui/core";//추가
 import styled from "styled-components";
 
 //TEST STYLE
@@ -19,7 +19,7 @@ export const useStyles = makeStyles((theme : Theme) =>
         alignItems: "center",
         height: 60,
         width: "100%",
-        justifyContent: "space-between",
+        justifyContent: "space-between", //아이콘 사이를 띄워주는 역할
         padding: 9,
 
     },
@@ -54,5 +54,5 @@ export const MuiContainer = styled(Container)`
 
 
 export const MuiPaper = styled(Paper)`
-    margin: 12px auto;
-`;
+    margin: 12px auto; 
+`;//페이지를 가운데로 정렬

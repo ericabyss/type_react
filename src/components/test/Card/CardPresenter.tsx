@@ -26,8 +26,7 @@ const CardPresenter = (props: ICard) => {
             <Box className={classes.header}>
                 <Box className={classes.avatar}>
                     
-                    계정 이름
-                    </Box> 
+                    </Box> 계정이름
                 <Box>
                     <IconButton>
                         <MoreVertIcon />
@@ -57,7 +56,7 @@ const CardPresenter = (props: ICard) => {
                 </Box>
             </Box>
             <Box>
-                <form onSubmit={(e)=>{
+                <form onSubmit={(e)=>{//댓글입력 시 리프레쉬를 방지
                     e.preventDefault();
                         props.onSubmit();
                         }}>
