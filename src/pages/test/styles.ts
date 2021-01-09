@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 //TEST STYLE
 //styled-component는 클래스명
-//".box"  안좋음. 그래서 변수명으로 씀.  Mui머테리얼 유아이 : ()
+//".box" 안좋음. 그래서 변수명으로 씀.  Mui:머테리얼 유아이 : ()
 
 
 export const useStyles = makeStyles((theme : Theme) =>
