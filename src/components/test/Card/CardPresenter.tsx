@@ -56,6 +56,9 @@ const CardPresenter = (props: ICard) => {
                 </Box>
             </Box>
             <Box>
+                
+            </Box>
+            <Box>
                 <form onSubmit={(e)=>{//댓글입력 시 리프레쉬를 방지
                     e.preventDefault();
                         props.onSubmit();
