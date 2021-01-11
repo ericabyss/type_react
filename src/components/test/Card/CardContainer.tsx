@@ -17,7 +17,7 @@ const CardContainer = () => {
     }
 
     const onSubmit = () => {//댓글 서버에 발송
-        setComments((prev)=>{//prev이전text추가
+        setComments((prev)=>{//prev이전 text추가
             return [...prev, text];
         });
         setText("");//Input비우기
@@ -31,7 +31,7 @@ const CardContainer = () => {
                      fill={fill} 
                      handleText={handleText}
                      text={text}
-                     onSubmit={onSubmit} />
+                     onSubmit={onSubmit}/>
     );
 }
 

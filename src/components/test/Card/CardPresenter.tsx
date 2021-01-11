@@ -14,6 +14,7 @@ interface ICard{
     handleText: (args: string) => void;
     text: string;
     onSubmit:() => void;
+    //comments: string;
 }
 
 const CardPresenter = (props: ICard) => {
@@ -56,6 +57,13 @@ const CardPresenter = (props: ICard) => {
                 </Box>
             </Box>
             <Box>
+            
+          {/*{comment.map((text) => {
+            return (
+                {comments}
+            )
+          
+          })}*/}
                 
             </Box>
             <Box>
