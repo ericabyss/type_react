@@ -11,7 +11,7 @@ const CardContainer = () => {
         setFill(!fill);
     };
 
-    //args->text의 인자
+    //args : text의 인자
     const handleText = (args: string) => { //댓글입력
         setText(args);
     }
@@ -23,15 +23,17 @@ const CardContainer = () => {
         setText("");//Input비우기
     }
 
-    console.log(comments);  //댓글 콘솔에 띄우기
+    console.log(comments);
+   // console.log(comments);  //댓글 콘솔에 띄우기
 
     return (
              <CardPresenter
-                    toggleLike={toggleLike}
+                     toggleLike={toggleLike}
                      fill={fill} 
                      handleText={handleText}
                      text={text}
-                     onSubmit={onSubmit}/>
+                     onSubmit={onSubmit}
+                     />
     );
 }
 
