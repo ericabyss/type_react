@@ -16,7 +16,7 @@ const CardContainer = () => {
         setText(args);
     }
 
-    const onSubmit = () => {//댓글 서버에 발송
+    const onSubmit = () => {//댓글 서버에 발송         addComment
         setComments((prev)=>{//prev이전 text추가
             return [...prev, text];
         });
@@ -25,6 +25,8 @@ const CardContainer = () => {
 
     console.log(comments);
    // console.log(comments);  //댓글 콘솔에 띄우기
+
+
 
     return (
              <CardPresenter
