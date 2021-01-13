@@ -25,8 +25,7 @@ const CardPresenter = (props: ICard) => {
         <MuiPaper className={classes.paper} elevation={3}>
 
             <Box className={classes.header}>
-                <Box className={classes.avatar}>
-                    </Box> 계정 이름
+                <Box className={classes.avatar}></Box> 계정 이름
                 <Box>
                     <IconButton>
                         <MoreVertIcon />
