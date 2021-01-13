@@ -5,8 +5,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import TurnedInNotIcon from "@material-ui/icons/TurnedInNot";
-import { AddComment, Favorite } from "@material-ui/icons";
-import { isThisTypeNode, setCommentRange } from "typescript";
+import { Favorite } from "@material-ui/icons";
 
 
 interface ICard{
