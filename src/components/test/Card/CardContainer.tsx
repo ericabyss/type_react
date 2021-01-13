@@ -16,11 +16,11 @@ const CardContainer = () => {
         setText(args);
     }
 
-    const onSubmit = () => {//댓글 서버에 발송         addComment
-        setComments((prev)=>{//prev이전 text추가
+    const onSubmit = (arg: string) => {//댓글 서버에 발송  addComment 역할
+        setComments((prev)=>{// prev이전 text추가
             return [...prev, text];
         });
-        setText("");//Input비우기
+        setText("");// Input비우기
     }
 
     console.log(comments);
@@ -35,6 +35,7 @@ const CardContainer = () => {
                      handleText={handleText}
                      text={text}
                      onSubmit={onSubmit}
+                     comments={comments}
                      />
     );
 }

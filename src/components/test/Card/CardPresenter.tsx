@@ -14,7 +14,8 @@ interface ICard{
     fill: boolean;
     handleText: (args: string) => void;
     text: string;
-    onSubmit:() => void;
+    onSubmit:(arg: string) => void;
+    comments: string;
 }
 
 const CardPresenter = (props: ICard) => {
@@ -64,9 +65,6 @@ const CardPresenter = (props: ICard) => {
 
 {/* 댓글 표시 */}
             <div className="comment_wrapper">
-                {/*comments.map(i =>
-                    useState(i)
-                */}
 
                 {comments.map(item =>
                                 <setComments
