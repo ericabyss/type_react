@@ -8,36 +8,42 @@ import styled from "styled-components";
 
 export const useStyles = makeStyles((theme : Theme) =>
  createStyles({
-    paper: {
+    paper: {//card
         display:"flex",
         flexDirection:"column",
-        width: 300,
-        height: 400,
+        width: 500,
+        height: "header+img_box"//?왜되는걸까
     },
-    header:{
+    header:{//계정정보
         display:"flex",
         alignItems: "center",
         height: 60,
         width: "100%",
         justifyContent: "space-between", //아이콘 사이를 띄워주는 역할
-        padding: 9,
-
+        padding: 9
     },
-    btn_box:{
+    btn_box:{//버튼 사이 띄워주기
         display:"flex",
         justifyContent: "space-between",
     },
-    avatar:{
-        height: 30,
-        width: 30,
+    avatar:{//계정사진
+        display:"flex",
+        height: "10%",
+        width: "10%",
         borderRadius: "70%",
-        border: "1px solid #000",
+        border: "1px solid #fff",
     },
-    img_box: {
+    img_box: {//본문사진
         borderBottom: "1px solid #eee",
-        height:250,
+        height:450,
         width:"100%"
-    }
+    },
+    avat:{//계정사진
+        display:"flex",
+        height: "10%",
+        width: "10%",
+        borderRadius: "70%",
+    },
     })
 );
 
