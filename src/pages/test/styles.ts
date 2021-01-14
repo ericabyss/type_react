@@ -75,4 +75,4 @@ export const MuiContainer = styled(Container)`
 
 export const MuiPaper = styled(Paper)`
     margin: 12px auto; 
-`;//페이지를 가운데로 정렬
+`;//페이지를 가운데로 정렬  

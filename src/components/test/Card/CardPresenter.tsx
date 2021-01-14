@@ -60,7 +60,7 @@ const CardPresenter = (props: ICard) => {
                     <div className={classes.prag}>
                    <p className={classes.com1}>[ 계정 이름 ]</p>
                    이것은 아마도 본문일껄
-                        안녕aaaaaaaaaaaaaaaaaaa nnnnnnnnnnnnnnnnnnnnn
+                        안녕aaaaaaaaaaaaaaaaaaa nnnnnnnnnnnnnnnnnn
                         </div>
                 </Box>
                 <Box>{/* 댓글 표시 */}
