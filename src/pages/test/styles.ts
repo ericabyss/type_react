@@ -44,6 +44,20 @@ export const useStyles = makeStyles((theme : Theme) =>
         width: "10%",
         borderRadius: "70%",
     },
+    prag: {//본문
+        position: "relative",
+        left: 10,
+        width:"100%"
+    },
+    input_com: {//댓글 입력창
+        position: "relative",
+        width:"98%",
+        //textDecoration:"none"
+        borderBottom: "#fff"
+    },
+    com1: {//이름 굵게
+        fontWeight:"bold"
+    },
     })
 );
 

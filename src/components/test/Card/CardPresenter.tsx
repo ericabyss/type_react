@@ -27,7 +27,7 @@ const CardPresenter = (props: ICard) => {
 
             <Box className={classes.header}>
                 <Box>
-                    <img className={classes.avatar} src={"/img/lo.jpg"} /> ddd
+                    <img className={classes.avatar} src={"/img/lo.jpg"} />
                 </Box>
                 <Box>
                     <IconButton>
@@ -57,31 +57,33 @@ const CardPresenter = (props: ICard) => {
             </Box>
             <Box>
                 <Box>{/* 본문쓸자리 */}
-                    <p>
-                        [ 계정 이름 ]   이것은 아마도 본문일껄
+                    <div className={classes.prag}>
+                   <p className={classes.com1}>[ 계정 이름 ]</p>
+                   이것은 아마도 본문일껄
                         안녕aaaaaaaaaaaaaaaaaaa nnnnnnnnnnnnnnnnnnnnn
-                    </p>
-                    <hr></hr>
+                        </div>
                 </Box>
                 <Box>{/* 댓글 표시 */}
-                    <div className="comment_wrapper">
+                    <div className={classes.prag}>
                         {props.comments.map((comment, index) => (
-                            <ul key={index}>{comment}</ul>
+                            <ul key={index}><div className={classes.com1}>[ 계정이름 ] </div>{comment}</ul>
                             ))}
                     </div>
                 </Box>
             </Box>
-            <Box>{/* 댓글 입력 */}
+            
+            <Box className={classes.prag}>{/* 댓글 입력 */}
+            
                 <form onSubmit={(e)=>{//댓글입력 시 리프레쉬를 방지
                     e.preventDefault();
                         props.onSubmit(props.text);
                         }}>
-                <Input 
-                        className="write_newComment"
-                        onChange={(e)=> props.handleText(e.target.value)} //handleChange
-                        placeholder="댓글달기...                          "
-                        value={props.text}
-                         />
+                            
+                    <Input 
+                            className={classes.input_com}
+                            onChange={(e)=> props.handleText(e.target.value)} //handleChange
+                            placeholder="댓글달기..."
+                            value={props.text} />
                 </form>
             </Box>
         
