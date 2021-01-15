@@ -7,6 +7,7 @@ import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import TurnedInNotIcon from "@material-ui/icons/TurnedInNot";
 import { Favorite } from "@material-ui/icons";
 import { getArgumentValues } from "graphql/execution/values";
+import { Text } from "../../../styles/styles";
 
 
 interface ICard{
@@ -26,8 +27,10 @@ const CardPresenter = (props: ICard) => {
         <MuiPaper className={classes.paper} elevation={3}> {/*elevation : 종이 섀도우*/}
 
             <Box className={classes.header}>
-                <Box>
-                    <img className={classes.avatar} src={"/img/lo.jpg"} />
+                <Box display={"flex"} flex-direction={"row"}>
+                    <img className={classes.avatar} src={"/img/images.jpg"} />
+                    <Text
+                    padding={"10px"} margin={"3px"}> trond._.s </Text>
                 </Box>
                 <Box>
                     <IconButton>
@@ -59,14 +62,17 @@ const CardPresenter = (props: ICard) => {
                 <Box>{/* 본문쓸자리 */}
                     <div className={classes.prag}>
                    <p className={classes.com1}>[ 계정 이름 ]</p>
-                   이것은 아마도 본문일껄
+                        이것은 아마도 본문일껄
                         안녕aaaaaaaaaaaaaaaaaaa nnnnnnnnnnnnnnnnnn
+
                         </div>
                 </Box>
                 <Box>{/* 댓글 표시 */}
                     <div className={classes.prag}>
                         {props.comments.map((comment, index) => (
-                            <ul key={index}><div className={classes.com1}>[ 계정이름 ] </div>{comment}</ul>
+                            /*<Box display={"flex"} flex-direction={"column"}>*/
+                            <ul key={index}><div className={classes.com1} >[ 계정이름 ] </div>{comment}</ul>
+                            /*</Box>*/
                             ))}
                     </div>
                 </Box>

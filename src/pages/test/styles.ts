@@ -28,10 +28,12 @@ export const useStyles = makeStyles((theme : Theme) =>
     },
     avatar:{//계정사진
         display:"flex",
-        height: "10%",
-        width: "10%",
+        //height: "10%",
+        //width: "10%",
+        height: 40,
+        width: 40,
         borderRadius: "70%",
-        border: "1px solid #fff",
+        border: "2px solid #e6e6e6",
     },
     img_box: {//본문사진
         borderBottom: "1px solid #eee",
@@ -45,6 +47,7 @@ export const useStyles = makeStyles((theme : Theme) =>
         borderRadius: "70%",
     },
     prag: {//본문
+        display:"flex",
         position: "relative",
         left: 10,
         width:"100%"
@@ -56,7 +59,8 @@ export const useStyles = makeStyles((theme : Theme) =>
         borderBottom: "#fff"
     },
     com1: {//이름 굵게
-        fontWeight:"bold"
+        fontWeight:"bold",
+        padding: "3px"
     },
     })
 );
