@@ -46,11 +46,14 @@ export const useStyles = makeStyles((theme : Theme) =>
         width: "10%",
         borderRadius: "70%",
     },
-    prag: {//본문
+    prag_b: {//본문전체(계정+본문)
+        fontSize:"15px",
         display:"flex",
         position: "relative",
-        left: 10,
-        width:"100%"
+        left: 5,
+        width:"100%",
+        overflow: "hidden",
+        padding: "3px"
     },
     input_com: {//댓글 입력창
         position: "relative",
@@ -58,9 +61,22 @@ export const useStyles = makeStyles((theme : Theme) =>
         //textDecoration:"none"
         borderBottom: "#fff"
     },
-    com1: {//이름 굵게
+    count: {//조회수
+        fontSize:"15px",
         fontWeight:"bold",
+        display:"flex",
+        position: "relative",
+        left: 5,
         padding: "3px"
+    },
+    com1: {//이름 굵게
+        
+        //fontSize:"15px",
+        display:"flex",
+       
+        fontColor: "black",
+        fontWeight:"bold",
+        //padding: "3px"
     },
     })
 );

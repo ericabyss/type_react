@@ -86,11 +86,5 @@ export const Card = styled.div`
 export const Text = styled.text`
   width: ${(props: IStyle) => (props.width ? props.width : null)};
   height: ${(props: IStyle) => (props.height ? props.height : null)};
-  margin: ${(props: IStyle) => (props.margin ? props.margin : null)};
-  padding: ${(props: IStyle) => (props.padding ? props.padding : null)};
-  outline-style: none;
-  border: none;
-  border-radius: ${(props: IStyle) =>  props.borderRadius ? props.borderRadius : null};
-  flex-direction: ${(props: IStyle) =>  props.flexDirection ? props.flexDirection : null};
-  vertical-align: ${(props: IStyle) =>  props.verticalAlign ? props.verticalAlign : null};
+ 
 `;

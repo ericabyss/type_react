@@ -29,8 +29,8 @@ const CardPresenter = (props: ICard) => {
             <Box className={classes.header}>
                 <Box display={"flex"} flex-direction={"row"}>
                     <img className={classes.avatar} src={"/img/images.jpg"} />
-                    <Text
-                    padding={"10px"} margin={"3px"}> trond._.s </Text>
+                    <Text margin={"10%"}> trond._.s </Text>
+                        
                 </Box>
                 <Box>
                     <IconButton>
@@ -58,17 +58,18 @@ const CardPresenter = (props: ICard) => {
                     </IconButton>
                 </Box>
             </Box>
+            <Box className={classes.count}>조회수 12,121회</Box>
             <Box>
-                <Box>{/* 본문쓸자리 */}
-                    <div className={classes.prag}>
-                   <p className={classes.com1}>[ 계정 이름 ]</p>
-                        이것은 아마도 본문일껄
-                        안녕aaaaaaaaaaaaaaaaaaa nnnnnnnnnnnnnnnnnn
-
-                        </div>
+                <Box className={classes.prag_b} display={"flex"} flex-direction={"row"}>{/* 본문쓸자리 */}
+                    
+                        <span className={classes.com1}>[계정이름]</span>
+                        &nbsp;
+                        <span>
+                            이것은 아마도 본문일껄...zxazas    
+                        </span>                    
                 </Box>
                 <Box>{/* 댓글 표시 */}
-                    <div className={classes.prag}>
+                    <div className={classes.prag_b}>
                         {props.comments.map((comment, index) => (
                             /*<Box display={"flex"} flex-direction={"column"}>*/
                             <ul key={index}><div className={classes.com1} >[ 계정이름 ] </div>{comment}</ul>
@@ -78,7 +79,7 @@ const CardPresenter = (props: ICard) => {
                 </Box>
             </Box>
             
-            <Box className={classes.prag}>{/* 댓글 입력 */}
+            <Box className={classes.prag_b}>{/* 댓글 입력 */}
             
                 <form onSubmit={(e)=>{//댓글입력 시 리프레쉬를 방지
                     e.preventDefault();
