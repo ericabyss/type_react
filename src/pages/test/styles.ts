@@ -17,6 +17,7 @@ export const useStyles = makeStyles((theme : Theme) =>
     header:{//계정정보
         display:"flex",
         alignItems: "center",
+        textAlign:"center",
         height: 60,
         width: "100%",
         justifyContent: "space-between", //아이콘 사이를 띄워주는 역할
@@ -54,12 +55,13 @@ export const useStyles = makeStyles((theme : Theme) =>
         width:"100%",
         overflow: "hidden",
         padding: "3px"
+        
     },
     input_com: {//댓글 입력창
         position: "relative",
         width:"98%",
         //textDecoration:"none"
-        borderBottom: "#fff"
+        borderBottom: "0px"
     },
     count: {//조회수
         fontSize:"15px",
@@ -69,14 +71,31 @@ export const useStyles = makeStyles((theme : Theme) =>
         left: 5,
         padding: "3px"
     },
-    com1: {//이름 굵게
-        
-        //fontSize:"15px",
+    name: {//계정이름 굵게
         display:"flex",
-       
         fontColor: "black",
         fontWeight:"bold",
-        //padding: "3px"
+        left: 5,
+        top: 20,
+    },
+    com1: {//계정이름 굵게
+        display:"flex",
+        fontColor: "black",
+        fontWeight:"bold",
+    },
+    line: {//한줄
+        display:"flex",
+        flexDirection:"row",
+    },
+    prag_c: {//댓글전체(계정+본문)
+        fontSize:"15px",
+        flexDirection:"column",
+        display:"flex",
+        position: "relative",
+        left: 5,
+        width:"100%",
+        overflow: "hidden",
+        padding: "3px"
     },
     })
 );

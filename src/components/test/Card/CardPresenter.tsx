@@ -29,7 +29,7 @@ const CardPresenter = (props: ICard) => {
             <Box className={classes.header}>
                 <Box display={"flex"} flex-direction={"row"}>
                     <img className={classes.avatar} src={"/img/images.jpg"} />
-                    <Text margin={"10%"}> trond._.s </Text>
+                    <span className={classes.name}> trond._.s </span>
                         
                 </Box>
                 <Box>
@@ -61,31 +61,27 @@ const CardPresenter = (props: ICard) => {
             <Box className={classes.count}>조회수 12,121회</Box>
             <Box>
                 <Box className={classes.prag_b} display={"flex"} flex-direction={"row"}>{/* 본문쓸자리 */}
-                    
-                        <span className={classes.com1}>[계정이름]</span>
+                        <span className={classes.com1}>trond._.s</span>
                         &nbsp;
-                        <span>
-                            이것은 아마도 본문일껄...zxazas    
-                        </span>                    
+                        <span text-overflow={"ellipsis"}>
+                            이것은 아마도 본문일껄ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+                        </span> 
                 </Box>
                 <Box>{/* 댓글 표시 */}
-                    <div className={classes.prag_b}>
+                    <div className={classes.prag_c}>
                         {props.comments.map((comment, index) => (
                             /*<Box display={"flex"} flex-direction={"column"}>*/
-                            <ul key={index}><div className={classes.com1} >[ 계정이름 ] </div>{comment}</ul>
+                            <ul key={index}><li className={classes.line}><span className={classes.com1}>gamzya</span> &nbsp; {comment}</li></ul>
                             /*</Box>*/
                             ))}
                     </div>
                 </Box>
             </Box>
-            
-            <Box className={classes.prag_b}>{/* 댓글 입력 */}
-            
+            <Box className={classes.prag_c}>{/* 댓글 입력 */}
                 <form onSubmit={(e)=>{//댓글입력 시 리프레쉬를 방지
                     e.preventDefault();
                         props.onSubmit(props.text);
                         }}>
-                            
                     <Input 
                             className={classes.input_com}
                             onChange={(e)=> props.handleText(e.target.value)} //handleChange
