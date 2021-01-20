@@ -63,8 +63,8 @@ const CardPresenter = (props: ICard) => {
                 <Box className={classes.prag_b} display={"flex"} flex-direction={"row"}>{/* 본문쓸자리 */}
                         <span className={classes.com1}>trond._.s</span>
                         &nbsp;
-                        <span text-overflow={"ellipsis"}>
-                            이것은 아마도 본문일껄ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+                        <span text-overflow={"ellipsis"}>{/*줄바꿈해주는줄*/}
+                            이것은 아마도 본문일껄ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ줄바꿈되라
                         </span> 
                 </Box>
                 <Box>{/* 댓글 표시 */}
