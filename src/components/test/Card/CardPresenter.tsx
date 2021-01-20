@@ -71,7 +71,7 @@ const CardPresenter = (props: ICard) => {
                     <div className={classes.prag_c}>
                         {props.comments.map((comment, index) => (
                             /*<Box display={"flex"} flex-direction={"column"}>*/
-                            <span text-overflow={"ellipsis"}><ul key={index}><li className={classes.line}><span className={classes.com1}>gamzya </span>&nbsp; {comment}</li> </ul></span>
+                            <ul key={index}><li className={classes.line}><span className={classes.com1}>gamzya </span>&nbsp; <span text-overflow={"ellipsis"}>{comment}</span></li> </ul>
                             /*</Box>*/
                             ))}
                     </div>
