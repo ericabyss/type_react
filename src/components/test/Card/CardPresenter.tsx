@@ -60,10 +60,10 @@ const CardPresenter = (props: ICard) => {
             </Box>
             <Box className={classes.count}>조회수 12,121회</Box>
             <Box>
-                <Box className={classes.prag_b} display={"flex"} flex-direction={"row"}>{/* 본문쓸자리 */}
+                <Box className={classes.prag_b} display={"flex"} flex-direction={"row"}>{/* 본문 쓸자리 */}
                         <span className={classes.com1}>trond._.s</span>
                         &nbsp;
-                        <span text-overflow={"ellipsis"}>{/*줄바꿈해주는줄*/}
+                        <span text-overflow={"ellipsis"}>{/*줄바꿈 해주는줄*/}
                             이것은 아마도 본문일껄ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ줄바꿈되라
                         </span> 
                 </Box>
